@@ -10,4 +10,10 @@ public class HelloWorldController : ControllerBase
     {
         return "Hello world from C#";
     }
+
+    [HttpGet("Thankyou")]
+    public IActionResult Thankyou(string name)
+    {
+        return Ok($"Thank you {name}");
+    }
 }

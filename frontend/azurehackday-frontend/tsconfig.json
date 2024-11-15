@@ -1,7 +1,14 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
-}
+    "compilerOptions": {
+      "jsx": "react",
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "strict": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "types": ["vite/client"] // Add this if you're using Vite
+    },
+    "include": ["src"]
+  }
+  
